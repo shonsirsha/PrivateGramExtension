@@ -1,0 +1,49 @@
+html,
+body {
+	margin: 0;
+	padding: 8px;
+}
+.mt-1 {
+	margin-top: 8px;
+}
+.mb-1 {
+	margin-bottom: 8px;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.cardContainer {
+	display: flex;
+	flex-direction: column;
+}
+.recordContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.fighterContainer {
+	width: 100%;
+	display: flex;
+}
+
+.image {
+	border-radius: 9999px;
+	width: auto;
+	height: 48px;
+}
+p {
+	margin: 0;
+}
+
+hr {
+	height: 1px;
+	width: 100%;
+	background: red;
+	border-color: red;
+}
+
+.ml-1 {
+	margin-left: 8px;
+}

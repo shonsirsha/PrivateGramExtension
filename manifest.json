@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Privategram",
+	"version": "0.0.1",
+	"description": "Using Privategram, you can open your Instagram DMs and watch your friends' stories without them knowing!",
+	"permissions": [
+		"storage",
+		"webRequest",
+		"webRequestBlocking",
+		"*://*.instagram.com/*"
+	],
+	"background": {
+		"scripts": ["index.js"]
+	},
+	"browser_action": {
+		"default_popup": "popup.html"
+	}
+}
