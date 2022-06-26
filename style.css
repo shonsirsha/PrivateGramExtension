@@ -1,49 +1,115 @@
+@font-face {
+	font-family: "Brandon";
+	font-weight: normal;
+	src: url(./BrandonTextRegular.otf);
+}
+
+@font-face {
+	font-family: "Brandon";
+	font-weight: bold;
+	src: url(./BrandonTextBold.otf);
+}
+
 html,
 body {
+	font-family: "Brandon";
 	margin: 0;
-	padding: 8px;
+	border: none;
+	padding: 0;
+	color: #2f3c7e;
 }
+
+h1,
+h2,
+p {
+	margin: 0;
+}
+
 .mt-1 {
 	margin-top: 8px;
 }
+.mt-2 {
+	margin-top: 16px;
+}
+.mt-3 {
+	margin-top: 24px;
+}
+.mt-4 {
+	margin-top: 32px;
+}
 .mb-1 {
 	margin-bottom: 8px;
+}
+
+.ml-1 {
+	margin-left: 8px;
 }
 
 .d-flex {
 	display: flex;
 }
 
-.cardContainer {
-	display: flex;
-	flex-direction: column;
-}
-.recordContainer {
-	display: flex;
+.flex-column {
 	flex-direction: column;
 }
 
-.fighterContainer {
-	width: 100%;
-	display: flex;
+.container {
+	padding: 16px 24px;
+	width: 280px;
+	max-height: 334px;
+	background: #fbeaeb;
+}
+.shadow {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.image {
-	border-radius: 9999px;
-	width: auto;
-	height: 48px;
-}
-p {
-	margin: 0;
-}
-
-hr {
-	height: 1px;
-	width: 100%;
-	background: red;
-	border-color: red;
+.switch-container {
+	width: 130px;
+	height: 31px;
+	position: relative;
+	border-radius: 32px;
+	background: #e5e7ee;
+	transition: all 0.35s;
 }
 
-.ml-1 {
-	margin-left: 8px;
+.switch-container.active {
+	background: #c4ccf4;
+}
+.switch-container:hover {
+	cursor: pointer;
+}
+.switch-button {
+	width: 31px;
+	height: 31px;
+	border-radius: 100%;
+	position: absolute;
+	left: 0;
+	background: #6b77b6;
+	transition: all 0.35s ease;
+}
+
+.switch-container.active .switch-button {
+	left: calc(100% - 31px);
+}
+
+.header {
+	font-size: 40px;
+}
+
+.subheader {
+	font-size: 18px;
+}
+.small {
+	font-size: 14px;
+}
+.body-1 {
+	font-size: 32px;
+}
+
+.body-2 {
+	font-size: 24px;
+}
+
+.body-2 {
+	font-size: 24px;
 }
